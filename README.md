@@ -1,2 +1,1 @@
-# meus-codigos-js
-Projetos e exercícios feitos durante meus estudos de programação.
+# meus-codigos-js exercícios feitos durante meus estudos de programação.
