@@ -31,7 +31,7 @@ class Turma {
     const ranking = [];
     const totalAlunos = listaParaOrdenar.length;
 
-    // Lógica de Ordenação por Seleção (Sem sort e sem Bubble)
+    // Lógica de Ordenação 
     for (let i = 0; i < totalAlunos; i++) {
       let indiceDoMaior = 0;
 
@@ -50,7 +50,6 @@ class Turma {
   }
 }
 
-// --- TESTANDO O CÓDIGO ---
 
 // Criando a turma
 const minhaTurma = new Turma("9º Ano A");
@@ -61,7 +60,7 @@ minhaTurma.adicionarAluno(new Aluno("Bruno Costa", 6.0, 9.5));
 minhaTurma.adicionarAluno(new Aluno("Daniela Lima", 9.0, 9.0));
 minhaTurma.adicionarAluno(new Aluno("Eduardo Alves", 5.5, 6.0));
 
-// Gerando o ranking de matemática (conforme o exemplo da imagem)
+
 console.log(`Ranking da Turma: {minhaTurma.nomeTurma}`);
 const resultadoMatematica = minhaTurma.criaRanking("matematica");
 
