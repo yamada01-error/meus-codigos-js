@@ -24,7 +24,7 @@ class FilaAtendimento {
         this.fila.push(paciente);
 
         console.log(
-            `Paciente ${nome} entrou na fila com a senha ${this.contadorSenha}`
+            `Paciente {nome} entrou na fila com a senha ${this.contadorSenha}`
         );
 
         this.contadorSenha++;
