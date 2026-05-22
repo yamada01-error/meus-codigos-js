@@ -1,4 +1,3 @@
-/ Classe Paciente
 class Paciente {
     constructor(nome, senha) {
         this.nome = nome;
@@ -24,7 +23,7 @@ class FilaAtendimento {
         this.fila.push(paciente);
 
         console.log(
-            `Paciente {nome} entrou na fila com a senha {this.contadorSenha}`
+            `Paciente ${nome} entrou na fila com a senha ${this.contadorSenha}`
         );
 
         this.contadorSenha++;
@@ -40,7 +39,7 @@ class FilaAtendimento {
         let paciente = this.fila.shift();
 
         console.log(
-            `Chamando paciente: ${paciente.nome} | Senha: {paciente.senha}`
+            `Chamando paciente: ${paciente.nome} | Senha: ${paciente.senha}`
         );
     }
 
@@ -56,7 +55,7 @@ class FilaAtendimento {
         for (let i = 0; i < this.fila.length; i++) {
 
             console.log(
-                `Nome: {this.fila[i].nome} | Senha: {this.fila[i].senha}`
+                `Nome: ${this.fila[i].nome} | Senha: ${this.fila[i].senha}`
             );
         }
     }
@@ -69,7 +68,7 @@ let atendimento = new FilaAtendimento();
 atendimento.adicionarPaciente("Yamada");
 atendimento.adicionarPaciente("Maria");
 atendimento.adicionarPaciente("bia");
-
+atendimento.adicionarPaciente("clara");
 atendimento.mostrarFila();
 
 atendimento.chamarPaciente();
